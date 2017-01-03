@@ -1,30 +1,30 @@
 [Mở nhanh tại đây](README.md)
 
 - [Thưởng em đâu sếp](#thưởng-em-đâu-sếp)
-- [Đoàn FPT](#đoàn-fpt)
+- [Đoàn FPT](#Đoàn-fpt)
 - [Hà nội niềm tin và hy vọng](#hà-nội-niềm-tin-và-hy-vọng)
-- [Đôi bờ](#đôi-bờ)
+- [Đôi bờ](#Đôi-bờ)
 - [Cây trúc xinh (English cover)](#cây-trúc-xinh-english-cover)
 - [Phần mềm ca](#phần-mềm-ca)
 - [FPT Kháng chiến](#fpt-kháng-chiến)
 - [FPT dòng sông lời thề](#fpt-dòng-sông-lời-thề)
-- [Đại đoàn FPT](#đại-đoàn-fpt)
-- [Mao Trạch ĐÔng tắm sông Trường Giang](#mao-trạch-đông-tắm-sông-trường-giang)
+- [Đại đoàn FPT](#Đại-đoàn-fpt)
+- [Mao Trạch ĐÔng tắm sông Trường Giang](#mao-trạch-Đông-tắm-sông-trường-giang)
 - [Sự tích Sọ dừa](#sự-tích-sọ-dừa)
 - [Sơn Tinh – Thủy Tinh](#sơn-tinh-–-thủy-tinh)
-- [Đừng xa em đêm nay Don’t leave me tonight](#đừng-xa-em-đêm-nay-dont-leave-me-tonight)
+- [Đừng xa em đêm nay Don’t leave me tonight](#Đừng-xa-em-đêm-nay-dont-leave-me-tonight)
 - [Tình ca du mục](#tình-ca-du-mục)
 - [FPT Hảo hán ca](#fpt-hảo-hán-ca)
 - [FPT ale](#fpt-ale)
 - [Mừng xuân FPT](#mừng-xuân-fpt)
 - [Tìm một con đường](#tìm-một-con-đường)
 - [Xuân là chính](#xuân-là-chính)
-- [Đố vui](#đố-vui)
+- [Đố vui](#Đố-vui)
 - [F-TOWN Chung một ước mơ 1](#f-town-chung-một-ước-mơ-1)
 - [F-TOWN Chung một ước mơ 2](#f-town-chung-một-ước-mơ-2)
 - [Lương mềm](#lương-mềm)
 - [FSoft ca](#fsoft-ca)
-- [Địch và ta Huyền thoại rượu](#địch-và-ta-huyền-thoại-rượu)
+- [Địch và ta Huyền thoại rượu](#Địch-và-ta-huyền-thoại-rượu)
 - [Ai đã cho anh về](#ai-đã-cho-anh-về)
 - [Người đẹp mũi to](#người-đẹp-mũi-to)
 - [Làm quan tiếp anh](#làm-quan-tiếp-anh)
@@ -36,7 +36,7 @@
 - [DƯ âm](#dư-âm)
 - [Thương binh](#thương-binh)
 - [Hò kéo pháo](#hò-kéo-pháo)
-- [Giải phóng Điện Biên](#giải-phóng-điện-biên)
+- [Giải phóng Điện Biên](#giải-phóng-Điện-biên)
 - [Đời bia ôm](#đời-bia-ôm)
 - [Cắc cùm cum](#cắc-cùm-cum)
 - [Nguyễn Viết Xuân](#nguyễn-viết-xuân)
@@ -52,7 +52,9 @@
 - [Trường Sa, Hoàng Sa là của chúng ta](#trường-sa-hoàng-sa-là-của-chúng-ta)
 
 
-### Thưởng em đâu sếp
+
+
+# Thưởng em đâu sếp
 
 
 
@@ -206,7 +208,7 @@ Thì ngày mai chúng em thôi việc
 
 
 
-### Đoàn FPT
+# Đoàn FPT
 
 
 
@@ -358,7 +360,7 @@ FPT ga ichido yuki...
 
 
 
-### Hà nội niềm tin và hy vọng
+# Hà nội niềm tin và hy vọng
 
 
 
@@ -424,7 +426,7 @@ Là hai chúng ta, sang Nguyễn Văn Cừ
 
 
 
-### Đôi bờ
+# Đôi bờ
 
 
 
@@ -468,7 +470,7 @@ Anh dìm em xuống ao
 
 
 
-### Cây trúc xinh (English cover)
+# Cây trúc xinh (English cover)
 
 
 
@@ -504,7 +506,7 @@ Ve(-ve)ry much, tang tinh la overnight
 
 
 
-### Phần mềm ca
+# Phần mềm ca
 
 
 
@@ -610,7 +612,7 @@ Xuất khẩu gạo nhiều ta đã vượt thằng Tây
 
 
 
-### FPT Kháng chiến
+# FPT Kháng chiến
 
 
 
@@ -672,7 +674,7 @@ Thề quyết chống quân ngoại xâm
 
 
 
-### FPT dòng sông lời thề
+# FPT dòng sông lời thề
 
 
 
@@ -736,7 +738,7 @@ Vẹn nguyên câu thề, FPT dòng sông ta về.
 
 
 
-### Đại đoàn FPT
+# Đại đoàn FPT
 
 
 
@@ -786,7 +788,7 @@ Vinh quang FPT sáng ngời
 
 
 
-### Mao Trạch ĐÔng tắm sông Trường Giang
+# Mao Trạch ĐÔng tắm sông Trường Giang
 
 
 
@@ -852,7 +854,7 @@ Trắng phau phau trừ mỗi nốt ruồi
 
 
 
-### Sự tích Sọ dừa
+# Sự tích Sọ dừa
 
 
 
@@ -938,7 +940,7 @@ Chị lại uống gáo dừa
 
 
 
-### Sơn Tinh – Thủy Tinh
+# Sơn Tinh – Thủy Tinh
 
 
 
@@ -1042,7 +1044,7 @@ f*ck f*ck you là f*ck f*ck you (x2)
 
 
 
-### Đừng xa em đêm nay - Don’t leave me tonight
+# Đừng xa em đêm nay - Don’t leave me tonight
 
 
 
@@ -1078,7 +1080,7 @@ Don’t leave me, don’t leave me tonight
 
 
 
-### Tình ca du mục
+# Tình ca du mục
 
 
 
@@ -1188,7 +1190,7 @@ Lài lai lai lái lai lai - lài lai lai lái lai lai - lài lai lai lái lái l
 
 
 
-### FPT Hảo hán ca
+# FPT Hảo hán ca
 
 
 
@@ -1230,7 +1232,7 @@ Hei ya yi er ya ei... hei ei hei yi er ya
 
 
 
-### FPT ale
+# FPT ale
 
 
 
@@ -1286,7 +1288,7 @@ F-P-T, a-le a-le a-le
 
 
 
-### Mừng xuân FPT
+# Mừng xuân FPT
 
 
 
@@ -1342,7 +1344,7 @@ Nâng cốc lên đê - lên đê, lên đề
 
 
 
-### Tìm một con đường
+# Tìm một con đường
 
 
 
@@ -1480,7 +1482,7 @@ Bọn đàn em, cũng điên cả đầu
 
 
 
-### Xuân là chính
+# Xuân là chính
 
 
 
@@ -1548,7 +1550,7 @@ Nay khi đã giầu có hơn thì ta nghiên cứu chiến lược.
 
 
 
-### Đố vui
+# Đố vui
 
 
 
@@ -1622,7 +1624,7 @@ Tha hồ mà đái lên cao….
 
 
 
-### F-TOWN - Chung một ước mơ 1
+# F-TOWN - Chung một ước mơ 1
 
 
 
@@ -1698,7 +1700,7 @@ Suốt đời, suốt đời… Suốt đời…hay sao ?
 
 
 
-### F-TOWN - Chung một ước mơ 2
+# F-TOWN - Chung một ước mơ 2
 
 
 
@@ -1820,7 +1822,7 @@ Và ta cùng hát hoan ca, và ta cùng về
 
 
 
-### Lương mềm
+# Lương mềm
 
 
 
@@ -1882,7 +1884,7 @@ Và rồi ngày mai đến, và rồi ngày mai đến
 
 
 
-### FSoft ca
+# FSoft ca
 
 
 
@@ -1930,7 +1932,7 @@ Sẽ có 1 ngày rạng danh sông núi,
 
 
 
-### Địch và ta - Huyền thoại rượu
+# Địch và ta - Huyền thoại rượu
 
 
 
@@ -1988,7 +1990,7 @@ Ta cụng ly với địch. Mà địch là địch ta là ta
 
 
 
-### Ai đã cho anh về
+# Ai đã cho anh về
 
 
 
@@ -2046,7 +2048,7 @@ Ngày mai chúng tôi trừ lương.
 
 
 
-### Người đẹp mũi to
+# Người đẹp mũi to
 
 
 
@@ -2102,7 +2104,7 @@ Và nòng pháo, vẫn vươn lên trời cao.
 
 
 
-### Làm quan tiếp anh
+# Làm quan tiếp anh
 
 
 
@@ -2160,7 +2162,7 @@ Vợ anh thương nước mắt long lanh
 
 
 
-### Ta là con của bố ta
+# Ta là con của bố ta
 
 
 
@@ -2202,7 +2204,7 @@ Ta đi theo lối nhỏ là lối an toàn
 
 
 
-### Công ty sáng tác
+# Công ty sáng tác
 
 
 
@@ -2254,7 +2256,7 @@ Hát một bài, bao nhiều bọn khác run rẩy sợ hãi.
 
 
 
-### Trèo lên quan dốc
+# Trèo lên quan dốc
 
 
 
@@ -2304,7 +2306,7 @@ Trèo lên cây mít, gai mít nó đâm trúng mông, gai mít nó đâm trúng
 
 
 
-### Rượu lậu làng ta
+# Rượu lậu làng ta
 
 
 
@@ -2354,7 +2356,7 @@ Trèo lên cây mít, gai mít nó đâm trúng mông, gai mít nó đâm trúng
 
 
 
-### Cuộc đời vẫn đẹp sao
+# Cuộc đời vẫn đẹp sao
 
 
 
@@ -2408,7 +2410,7 @@ Tay vẫn cầm lá thư tình yêu
 
 
 
-### DƯ âm
+# DƯ âm
 
 
 
@@ -2480,7 +2482,7 @@ Em thì thành vãi
 
 
 
-### Thương binh
+# Thương binh
 
 
 
@@ -2536,7 +2538,7 @@ Em thì thành vãi
 
 
 
-### Hò kéo pháo
+# Hò kéo pháo
 
 
 
@@ -2598,7 +2600,7 @@ Hò hò hò (nhỏ dần, yếu hẳn)
 
 
 
-### Giải phóng Điện Biên
+# Giải phóng Điện Biên
 
 
 
@@ -2642,7 +2644,7 @@ Hò hò hò (nhỏ dần, yếu hẳn)
 
 
 
-### Đời bia ôm
+# Đời bia ôm
 
 
 
@@ -2688,7 +2690,7 @@ Không phải bồ không phải vợ mà ôm
 
 
 
-### Cắc cùm cum
+# Cắc cùm cum
 
 
 
@@ -2764,7 +2766,7 @@ Bắt ông xui nằm với bà xui
 
 
 
-### Nguyễn Viết Xuân
+# Nguyễn Viết Xuân
 
 
 
@@ -2828,7 +2830,7 @@ Anh ơi sướng quá nữa đi anh nào
 
 
 
-### Có một loài chim
+# Có một loài chim
 
 
 
@@ -2898,7 +2900,7 @@ Có một loài chim không bao giờ bay.
 
 
 
-### Thanh niên quê tôi
+# Thanh niên quê tôi
 
 
 
@@ -2942,7 +2944,7 @@ Có một loài chim không bao giờ bay.
 
 
 
-### Bi hồng
+# Bi hồng
 
 
 
@@ -3000,7 +3002,7 @@ Làm sung sướng vui lòng các anh
 
 
 
-### Bảo tàng ca
+# Bảo tàng ca
 
 
 
@@ -3078,7 +3080,7 @@ Dù trái tim dẫu mất khôn
 
 
 
-### Tầm quan trọng của nâng bi
+# Tầm quan trọng của nâng bi
 
 
 
@@ -3146,7 +3148,7 @@ Sếp to vẫn sướng hàng ngày
 
 
 
-### Nghề R&D (No matter what)
+# Nghề R&D (No matter what)
 
 
 
@@ -3232,7 +3234,7 @@ Tại do ông sếp (ông Tuấn) mà thôi
 
 
 
-### Trường ca FTS
+# Trường ca FTS
 
 
 
@@ -3508,13 +3510,13 @@ TrucLT - ThanhDV - QuanNDM
 
 
 
-### Ngọn lửa tay ga
+# Ngọn lửa tay ga
 
 
 
     
 
- Một ngọn lửa hồng kề mông ta ừ﻿ Ừ Ư
+Một ngọn lửa hồng kề mông ta ừ﻿ Ừ Ư
 
 Một ngọn lửa hồng cháy từ từ
 
@@ -3566,7 +3568,7 @@ Cháy lên đi này xe honda, cháy lên đi này yamaha, cháy lên đi này to
 
 
 
-### Ngựa ô thu phí
+# Ngựa ô thu phí
 
 
 
@@ -3720,7 +3722,7 @@ Mình mà tè thì mình lại chơi giống ngựa
 
 
 
-### Trường Sa, Hoàng Sa là của chúng ta
+# Trường Sa, Hoàng Sa là của chúng ta
 
 
 
