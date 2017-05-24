@@ -5,9 +5,21 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>FPT STCo</title>
+
+  <meta http-equiv="cleartype" content="on">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui,maximum-scale=1.0,user-scalable=0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="FPT STCo">
+  <meta name="application-name" content="FPT STCo">
+  <meta name="description" content="Tra cứu các bài hát STCo">
+  <meta name="author" content="QuanNDM2@fpt.com.vn">
+  <meta name="apple-itunes-app" content="app-id=1193052114" />
+  <!--<meta name=msapplication-config content=/assets/favicon/browserconfig.xml>-->
+  <!--<meta name=theme-color content="#d35400">-->
+  <link rel="manifest" href="/manifest.json">
 
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
@@ -15,68 +27,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.css" integrity="sha256-F3InpWqyVi1FMPzhBnbiqpViSxOsttfGczs1rAUryrc="
     crossorigin="anonymous" />
 
+  <link rel="stylesheet" href="css/styles.css" />
 
-
-
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
-  <!--<link rel="stylesheet/less" type="text/css" href="less/styles.less" />-->
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-
-  <div id="app">
-    <div class="phone-viewport">
-      <md-toolbar>
-        <!--<md-button class="md-icon-button">
-          <md-icon>menu</md-icon>
-        </md-button>-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
 
 
-        <h2 class="md-title">FPT STCo</h2>
+  <div id="app" v-cloak>
+    <md-dialog-alert :md-title="'Trợ giúp'" :md-content-html="'<ul><li>Bấm biểu tượng <strong>tìm kiếm</strong> để tìm bài hát (hỗ trợ tìm không dấu)</li> <li>Ứng dụng có <strong>hỗ trợ offline</strong></li> <li>Bạn hãy thêm website này ra màn hình chính <strong>(Add to Home screen)</strong> để sử dụng như một Ứng dụng</li><li>Mọi góp ý và đóng góp bài hát mới, vui lòng truy cập <a href=https://github.com/ducminhquan/stico>Github của app</a></li></ul>'"
+      ref="helpDialog">
+    </md-dialog-alert>
 
+    <div class="phone-viewport main">
+      <md-toolbar class="main-toolbar">
+        <md-button class="md-icon-button" @click.native="toggleLeftSidenav">
+          <md-icon>search</md-icon>
+        </md-button>
 
-        <md-input-container class="md-input-placeholder" style="flex: 1 1 0%;">
-          <label>Initial value</label>
-          <input type="text" placeholder="Tìm kiếm" v-model="filterTitle">
-        </md-input-container>
+        <h2 class="md-title" style="flex: 1 1 0%;">FPT STCo</h2>
 
-        <md-button class="md-icon-button">
-          <md-icon>favorite</md-icon>
+        <md-button class="md-icon-button" @click.native="openHelpDialog">
+          <md-icon>help</md-icon>
         </md-button>
       </md-toolbar>
 
-      <md-list class="md-double-line">
-        <md-list-item v-for="song in filteredByTitle">
-          <md-button class="md-list-item-container">
-            <md-icon class="md-primary">library_music</md-icon>
-            <div class="md-list-text-container">
-              <span>{{ song.title }}</span>
-              <span>{{ song.content | truncate }}</span>
-            </div>
-          </md-button>
-        </md-list-item>
+      <md-sidenav class="md-left" ref="leftSidenav">
+        <md-toolbar>
+          <md-input-container>
+            <label>Tìm kiếm</label>
+            <md-input v-model="filterTitle"></md-input>
+          </md-input-container>
+        </md-toolbar>
 
-        <!--<md-list-item>
-          <md-button class="md-list-item-container">
-            <md-icon class="md-primary">library_music</md-icon>
-            <div class="md-list-text-container">
-              <span>(650) 555-1234</span>
-              <span>Mobile</span>
-            </div>
-          </md-button>
-        </md-list-item>-->
+        <md-list class="md-double-line">
+          <md-list-item v-for="song in filteredByTitle" :key="song.title">
+            <md-button @click.native="selectSong(song)" class="md-list-item-container">
+              <md-icon class="md-primary">library_music</md-icon>
+              <div class="md-list-text-container">
+                <span>{{ song.title }}</span>
+                <span>{{ song.content | truncate }}</span>
+              </div>
+            </md-button>
+          </md-list-item>
+      </md-sidenav>
+
+
+      <div class="main-content">
+        <span class="title">{{ selected.title}}</span>
+        <div class="content" v-html="toHtml(selected.content)"></div>
+      </div>
+
     </div>
   </div>
 
-  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js" integrity="sha256-dCvRWClQPYqeAQPjy3igNtsd9//GfxEAKN6Fx/VuYzw="
+    crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.js" integrity="sha256-TyfDdpkpZ5LS/mVlZD7gvrmFLR6UruJCjvLbDxvIoxs="
     crossorigin="anonymous"></script>
-<!--
+  <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" integrity="sha256-nzh8GLE0fQjJPBBicaZCrsbQS9YUgZCThGOct+WrQgY="
     crossorigin="anonymous"></script>-->
 

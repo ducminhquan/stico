@@ -1,0 +1,43 @@
+body
+ {
+    /*height: 100%;
+    overflow: hidden;*/
+    overflow-y: hidden
+}
+
+.main {
+overflow: auto;
+height: 100vh;
+}
+
+[v-cloak] { display: none; }
+
+.main-toolbar {
+    position: fixed;
+    width: 100%;
+}
+
+.main-content {    
+    /*overflow: auto;*/
+    /*height: 100%;*/
+    padding: 1rem;
+    padding-top: 64px;
+}
+
+.main-content .content {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.main-content .title {
+    display: block;
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.sidenav {
+    height: 100vh;
+}
