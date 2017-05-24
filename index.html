@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.css" integrity="sha256-F3InpWqyVi1FMPzhBnbiqpViSxOsttfGczs1rAUryrc="
+    crossorigin="anonymous" />
+
+
+
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+  <!--<link rel="stylesheet/less" type="text/css" href="less/styles.less" />-->
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="phone-viewport">
+      <md-toolbar>
+        <!--<md-button class="md-icon-button">
+          <md-icon>menu</md-icon>
+        </md-button>-->
+
+
+        <h2 class="md-title">FPT STCo</h2>
+
+
+        <md-input-container class="md-input-placeholder" style="flex: 1 1 0%;">
+          <label>Initial value</label>
+          <input type="text" placeholder="Tìm kiếm" v-model="filterTitle">
+        </md-input-container>
+
+        <md-button class="md-icon-button">
+          <md-icon>favorite</md-icon>
+        </md-button>
+      </md-toolbar>
+
+      <md-list class="md-double-line">
+        <md-list-item v-for="song in filteredByTitle">
+          <md-button class="md-list-item-container">
+            <md-icon class="md-primary">library_music</md-icon>
+            <div class="md-list-text-container">
+              <span>{{ song.title }}</span>
+              <span>{{ song.content | truncate }}</span>
+            </div>
+          </md-button>
+        </md-list-item>
+
+        <!--<md-list-item>
+          <md-button class="md-list-item-container">
+            <md-icon class="md-primary">library_music</md-icon>
+            <div class="md-list-text-container">
+              <span>(650) 555-1234</span>
+              <span>Mobile</span>
+            </div>
+          </md-button>
+        </md-list-item>-->
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.js" integrity="sha256-TyfDdpkpZ5LS/mVlZD7gvrmFLR6UruJCjvLbDxvIoxs="
+    crossorigin="anonymous"></script>
+<!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" integrity="sha256-nzh8GLE0fQjJPBBicaZCrsbQS9YUgZCThGOct+WrQgY="
+    crossorigin="anonymous"></script>-->
+
+
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
