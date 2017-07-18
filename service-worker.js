@@ -14,7 +14,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v1';
+const PRECACHE = 'precache-v3';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -22,12 +22,15 @@ const PRECACHE_URLS = [
     'index.html',
     './css/styles.css',
     './js/scripts.js',
-    './data/songs.json',
-    './service-worker.js'
+    './js/vue.min.js',
+    './js/vue-material.js',
+    './css/vue-material.css',
+    './css/vue-material.css.map'
 ];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
+    console.log('install');
     event.waitUntil(
         caches.open(PRECACHE)
             .then(cache => cache.addAll(PRECACHE_URLS))
@@ -40,6 +43,7 @@ self.addEventListener('activate', event => {
     const currentCaches = [PRECACHE, RUNTIME];
     event.waitUntil(
         caches.keys().then(cacheNames => {
+            console.log('Remove');
             return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
         }).then(cachesToDelete => {
             return Promise.all(cachesToDelete.map(cacheToDelete => {
@@ -71,5 +75,59 @@ self.addEventListener('fetch', event => {
             });
         })
     );
+
+    event.waitUntil(update(event.request));
     // }
 });
+
+function update(request) {
+    return caches.open(RUNTIME).then(function (cache) {
+        return fetch(request).then(function (response) {
+            return cache.put(request, response);
+        });
+    });
+}
+
+
+// var CACHE = RUNTIME;
+
+// self.addEventListener('install', function (evt) {
+//     console.log('The service worker is being installed.');
+
+//     evt.waitUntil(precache());
+// });
+
+// self.addEventListener('fetch', function (evt) {
+//     console.log('The service worker is serving the asset.');
+//     evt.respondWith(fromCache(evt.request));
+
+//     evt.waitUntil(update(evt.request));
+// });
+
+// function precache() {
+//     return caches.open(CACHE).then(function (cache) {
+//         return cache.addAll(PRECACHE_URLS);
+//     });
+// }
+
+// function fromCache(request) {
+//     return caches.open(RUNTIME).then(function (cache) {
+//         return cache.match(request).then(function (matching) {
+//             return matching || Promise.reject('no-match');
+//         });
+//     });
+// }
+
+// function fromNetwork(request, timeout) {
+//     return new Promise(function (fulfill, reject) {
+//         var timeoutId = setTimeout(reject, timeout);
+
+//         fetch(request).then(function (response) {
+//             clearTimeout(timeoutId);
+//             fulfill(response);
+//         }, reject);
+//     });
+// }
+
+
+

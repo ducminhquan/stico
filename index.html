@@ -45,9 +45,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.css" integrity="sha256-F3InpWqyVi1FMPzhBnbiqpViSxOsttfGczs1rAUryrc="
-    crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="css/vue-material.css" />
   <link rel="stylesheet" href="css/styles.css" />
 
 </head>
@@ -55,8 +53,19 @@
 <body>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
+      navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+        // registration worked
+        console.log('Registration succeeded.');
+        registration.addEventListener('updatefound', function () {
+          console.log('service worker changed');
+        });
+        registration.update();
+        // registration.update();
+      }).catch(function (error) {
+        // registration failed
+        console.log('Registration failed with ' + error);
+      });
+    };
   </script>
 
 
@@ -107,11 +116,9 @@
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.3/vue.min.js" integrity="sha256-dCvRWClQPYqeAQPjy3igNtsd9//GfxEAKN6Fx/VuYzw="
-    crossorigin="anonymous"></script>
+  <script src="js/vue.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-material/0.7.1/vue-material.js" integrity="sha256-TyfDdpkpZ5LS/mVlZD7gvrmFLR6UruJCjvLbDxvIoxs="
-    crossorigin="anonymous"></script>
+  <script src="js/vue-material.js"></script>
   <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" integrity="sha256-nzh8GLE0fQjJPBBicaZCrsbQS9YUgZCThGOct+WrQgY="
     crossorigin="anonymous"></script>-->

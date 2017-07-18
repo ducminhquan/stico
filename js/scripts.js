@@ -12,7 +12,7 @@ Vue.material.registerTheme('default', {
 var normalizeVietnamese = function (text) {
     return text.normalize('NFD').toLowerCase()
         .replace(/[\u0300-\u036f]/g, "")
-        .replace('đ', 'd');
+        .replace('đ', 'd').replace('Đ', 'd');
 };
 
 var app = new Vue({
