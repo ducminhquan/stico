@@ -76,7 +76,8 @@ var app = new Vue({
             if (filterTitle) {
                 songs = songs.filter(function (song) {
                     return Object.keys(song).some(function (key) {
-                        return song && String(normalizeVietnamese(song[key])).indexOf(filterTitle) > -1;
+                        if (!song) return false;
+                        return String(normalizeVietnamese(song[key])).indexOf(filterTitle) > -1;
                     });
                 });
             }
