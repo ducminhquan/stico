@@ -96,12 +96,12 @@
         </md-toolbar>
 
         <md-list class="md-double-line">
-          <md-list-item v-for="song in filteredByTitle" :key="song.title">
+          <md-list-item v-for="(song, i) in filteredByTitle" :key="song.title + '-' + i">
             <md-button @click.native="selectSong(song)" class="md-list-item-container">
               <md-icon class="md-primary">library_music</md-icon>
               <div class="md-list-text-container">
-                <span>{{ song.title }}</span>
-                <span>{{ song.content | truncate }}</span>
+                <span>{{ song?.title }}</span>
+                <span>{{ song?.content | truncate }}</span>
               </div>
             </md-button>
           </md-list-item>
